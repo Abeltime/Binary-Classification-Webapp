@@ -7,7 +7,7 @@ model = train_model()
 with st.expander('', expanded=True):
     # Input fields with default values and units
     age = st.number_input('Age (years)', value=47, format='%d', key="age")  # Integer input for Age
-    ca125 = st.number_input('CA125', value=20, format='%d', key="ca125")  # Integer input for CA125
+    # ca125 = st.number_input('CA125', value=20, format='%d', key="ca125")  # Integer input for CA125
     cea = st.number_input('CEA (ng/ml)', value=3.26, format='%0.2f', key="cea")
     plt_ = st.number_input('PLT (×10⁹/L)', value=161, format='%d', key="plt")  # Integer input for PLT
     aptt = st.number_input('APTT (S)', value=27.1, format='%0.2f', key="aptt")
@@ -21,7 +21,6 @@ with st.expander('', expanded=True):
         # Create a dictionary with the data
         data = {
             "Age": age,
-            "CA125": ca125,
             "CEA": cea,
             "PLT": plt_,
             "APTT": aptt,
